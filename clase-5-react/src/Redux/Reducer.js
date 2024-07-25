@@ -1,23 +1,3 @@
-// const initialState = {
-//     products: []
-//     //Aca podria tener varios states
-//     // products: [],
-//     // users: {} whuteva....
-//     //Las guardo aca
-
-
-// }
-
-// export const reducer = (state = initialState, action) => { 
-//         switch (action.type) {
-//             case "ADD_MONEY":
-//                 //logica que se ejectura cuando llames la Action. 
-//                 return state
-//             default: //Esto siempre
-//                 return state //Siempre igual
-//         }
-// }
-
 // Reducer.js
 
 const initialState = {

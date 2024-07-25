@@ -1,12 +1,7 @@
-// import { reducer } from "./Reducer";
-// import {createStore} from "redux";
-
-// const store = createStore(reducer);
-
 // Store.js
 
 import { createStore, combineReducers } from 'redux';
-import postReducer from './Reducer';
+import postReducer from './Reducer'; // Adjust the path as needed
 
 const rootReducer = combineReducers({
   posts: postReducer, // You can add more reducers here if needed
