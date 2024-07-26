@@ -1,12 +1,9 @@
-// Store.js
+// import postReducer from './Reducer'; // Aca esta conectado el Reducer con el Store. 
+import { createStore, applyMiddleware } from "redux";
+import rootReducer from "./Reducer";
+import {thunk} from "redux-thunk";
 
-import { createStore, combineReducers } from 'redux';
-import postReducer from './Reducer'; // Adjust the path as needed
 
-const rootReducer = combineReducers({
-  posts: postReducer, // You can add more reducers here if needed
-});
-
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 export default store;
