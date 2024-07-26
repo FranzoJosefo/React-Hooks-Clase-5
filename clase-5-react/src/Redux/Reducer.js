@@ -12,7 +12,7 @@ const initialState = {
  * 
  */
 
-export default function rootReducer(state = initialState, action) {
+ function postReducer(state = initialState, action) {
     switch (action.type) {
         case FETCH_POSTS:
             console.log("case FETCH_POSTS", action.payload)
@@ -23,8 +23,8 @@ export default function rootReducer(state = initialState, action) {
     }
 };
 
-// const rootReducer = combineReducers({  // Esto es para usar muchos reducers, entonces tenes ponele, uno por feature. 
-//     posts: postReducer,
-// });
+const rootReducer = combineReducers({  // Esto es para usar muchos reducers, entonces tenes ponele, uno por feature. 
+    posts: postReducer,
+});
 
-// export default rootReducer;
+export default rootReducer;

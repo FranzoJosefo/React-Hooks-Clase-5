@@ -4,7 +4,7 @@ import PostCard from './PostCard';
 import fetchPostAction from '../Redux/Actions';
 
 const ListPostCard = () => {
-  const postList = useSelector((state) => state.postList);
+  const postList = useSelector((state) => state.posts.postList);
   const dispatch = useDispatch();
 
   const [formData, setFormData] = useState({
